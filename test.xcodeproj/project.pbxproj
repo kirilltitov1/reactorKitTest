@@ -3,27 +3,38 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		EFAEAE762591F5F5009C2CAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAEAE752591F5F5009C2CAB /* AppDelegate.swift */; };
 		EFAEAE782591F5F5009C2CAB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAEAE772591F5F5009C2CAB /* SceneDelegate.swift */; };
-		EFAEAE7A2591F5F5009C2CAB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAEAE792591F5F5009C2CAB /* ViewController.swift */; };
+		EFAEAE7A2591F5F5009C2CAB /* PinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAEAE792591F5F5009C2CAB /* PinViewController.swift */; };
 		EFAEAE7D2591F5F5009C2CAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFAEAE7B2591F5F5009C2CAB /* Main.storyboard */; };
 		EFAEAE7F2591F5F6009C2CAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFAEAE7E2591F5F6009C2CAB /* Assets.xcassets */; };
 		EFAEAE822591F5F6009C2CAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFAEAE802591F5F6009C2CAB /* LaunchScreen.storyboard */; };
+		EFAEAE8C25923618009C2CAB /* ReactorKit in Frameworks */ = {isa = PBXBuildFile; productRef = EFAEAE8B25923618009C2CAB /* ReactorKit */; };
+		EFAEAE9025923641009C2CAB /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = EFAEAE8F25923641009C2CAB /* RxCocoa */; };
+		EFAEAE9225923641009C2CAB /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EFAEAE9125923641009C2CAB /* RxSwift */; };
+		EFAEAE9F25925A91009C2CAB /* PinReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAEAE9E25925A91009C2CAB /* PinReactor.swift */; };
+		EFC193B625A79512001748BC /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC193B525A79512001748BC /* AppCoordinator.swift */; };
+		EFC193BA25A79543001748BC /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC193B925A79543001748BC /* BaseCoordinator.swift */; };
+		EFC193BD25A7956C001748BC /* PinCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC193BC25A7956C001748BC /* PinCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EFAEAE722591F5F5009C2CAB /* test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFAEAE752591F5F5009C2CAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFAEAE772591F5F5009C2CAB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EFAEAE792591F5F5009C2CAB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EFAEAE792591F5F5009C2CAB /* PinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinViewController.swift; sourceTree = "<group>"; };
 		EFAEAE7C2591F5F5009C2CAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EFAEAE7E2591F5F6009C2CAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EFAEAE812591F5F6009C2CAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EFAEAE832591F5F6009C2CAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFAEAE9E25925A91009C2CAB /* PinReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinReactor.swift; sourceTree = "<group>"; };
+		EFC193B525A79512001748BC /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		EFC193B925A79543001748BC /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		EFC193BC25A7956C001748BC /* PinCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +42,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFAEAE9225923641009C2CAB /* RxSwift in Frameworks */,
+				EFAEAE9025923641009C2CAB /* RxCocoa in Frameworks */,
+				EFAEAE8C25923618009C2CAB /* ReactorKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,13 +72,49 @@
 			children = (
 				EFAEAE752591F5F5009C2CAB /* AppDelegate.swift */,
 				EFAEAE772591F5F5009C2CAB /* SceneDelegate.swift */,
-				EFAEAE792591F5F5009C2CAB /* ViewController.swift */,
+				EFAEAE942592486E009C2CAB /* Pin */,
 				EFAEAE7B2591F5F5009C2CAB /* Main.storyboard */,
 				EFAEAE7E2591F5F6009C2CAB /* Assets.xcassets */,
 				EFAEAE802591F5F6009C2CAB /* LaunchScreen.storyboard */,
 				EFAEAE832591F5F6009C2CAB /* Info.plist */,
+				EFC193B525A79512001748BC /* AppCoordinator.swift */,
+				EFC193B925A79543001748BC /* BaseCoordinator.swift */,
 			);
 			path = test;
+			sourceTree = "<group>";
+		};
+		EFAEAE942592486E009C2CAB /* Pin */ = {
+			isa = PBXGroup;
+			children = (
+				EFC193B425A79426001748BC /* Coordinator */,
+				EFAEAE9D25925A7C009C2CAB /* Reactor */,
+				EFAEAE9A259256A2009C2CAB /* View */,
+			);
+			path = Pin;
+			sourceTree = "<group>";
+		};
+		EFAEAE9A259256A2009C2CAB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EFAEAE792591F5F5009C2CAB /* PinViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EFAEAE9D25925A7C009C2CAB /* Reactor */ = {
+			isa = PBXGroup;
+			children = (
+				EFAEAE9E25925A91009C2CAB /* PinReactor.swift */,
+			);
+			path = Reactor;
+			sourceTree = "<group>";
+		};
+		EFC193B425A79426001748BC /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				EFC193BC25A7956C001748BC /* PinCoordinator.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +133,11 @@
 			dependencies = (
 			);
 			name = test;
+			packageProductDependencies = (
+				EFAEAE8B25923618009C2CAB /* ReactorKit */,
+				EFAEAE8F25923641009C2CAB /* RxCocoa */,
+				EFAEAE9125923641009C2CAB /* RxSwift */,
+			);
 			productName = test;
 			productReference = EFAEAE722591F5F5009C2CAB /* test.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +165,10 @@
 				Base,
 			);
 			mainGroup = EFAEAE692591F5F5009C2CAB;
+			packageReferences = (
+				EFAEAE8A25923618009C2CAB /* XCRemoteSwiftPackageReference "ReactorKit" */,
+				EFAEAE8E25923641009C2CAB /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = EFAEAE732591F5F5009C2CAB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,7 +196,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFAEAE7A2591F5F5009C2CAB /* ViewController.swift in Sources */,
+				EFAEAE9F25925A91009C2CAB /* PinReactor.swift in Sources */,
+				EFC193BA25A79543001748BC /* BaseCoordinator.swift in Sources */,
+				EFAEAE7A2591F5F5009C2CAB /* PinViewController.swift in Sources */,
+				EFC193BD25A7956C001748BC /* PinCoordinator.swift in Sources */,
+				EFC193B625A79512001748BC /* AppCoordinator.swift in Sources */,
 				EFAEAE762591F5F5009C2CAB /* AppDelegate.swift in Sources */,
 				EFAEAE782591F5F5009C2CAB /* SceneDelegate.swift in Sources */,
 			);
@@ -339,6 +402,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EFAEAE8A25923618009C2CAB /* XCRemoteSwiftPackageReference "ReactorKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactorKit/ReactorKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.1;
+			};
+		};
+		EFAEAE8E25923641009C2CAB /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EFAEAE8B25923618009C2CAB /* ReactorKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EFAEAE8A25923618009C2CAB /* XCRemoteSwiftPackageReference "ReactorKit" */;
+			productName = ReactorKit;
+		};
+		EFAEAE8F25923641009C2CAB /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EFAEAE8E25923641009C2CAB /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		EFAEAE9125923641009C2CAB /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EFAEAE8E25923641009C2CAB /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EFAEAE6A2591F5F5009C2CAB /* Project object */;
 }
