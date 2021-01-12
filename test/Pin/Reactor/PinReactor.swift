@@ -14,12 +14,14 @@ class PinReactor: Reactor {
     
     enum Action {
         case inputPinCode(String)
+        case delPinCodeSimbol
     }
     
     // represent state changes
     enum Mutation {
         case pinCode(String)
         case pinCodeValidate(String)
+        case delPinCodeSimbol
     }
     
     // represents the current view state
@@ -52,6 +54,10 @@ class PinReactor: Reactor {
             }
             return Observable.concat([Observable.just(Mutation.pinCode(simbol)),
                                       Observable.just(Mutation.pinCodeValidate(msg))])
+        case .delPinCodeSimbol:
+            let msg = ""
+            return Observable.concat([Observable.just(Mutation.delPinCodeSimbol),
+                                      Observable.just(Mutation.pinCodeValidate(msg))])
         }
     }
     
@@ -62,6 +68,8 @@ class PinReactor: Reactor {
             newState.pinCode.append(simbol)
         case let .pinCodeValidate(msg):
             newState.pinCodeValidate = msg
+        case .delPinCodeSimbol:
+            _ = newState.pinCode.popLast()
         }
         return newState
     }

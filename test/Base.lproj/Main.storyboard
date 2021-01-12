@@ -153,10 +153,19 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <state key="normal" title="8"/>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hwl-Ao-o6a">
+                                        <rect key="frame" x="129" y="193" width="40" height="27.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="Lxb-9d-YkO"/>
+                                            <constraint firstAttribute="width" constant="40" id="jGt-E8-Arq"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="delete.right" catalog="system"/>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="Ubo-TC-Bwu" firstAttribute="leading" secondItem="k7D-3g-Hby" secondAttribute="trailing" constant="8" id="2Kq-3i-GuW"/>
+                                    <constraint firstItem="Hwl-Ao-o6a" firstAttribute="centerY" secondItem="5uJ-fB-4Db" secondAttribute="centerY" id="2zt-Xn-zTS"/>
                                     <constraint firstItem="ram-ZF-umw" firstAttribute="leading" secondItem="5Hl-MB-tK3" secondAttribute="trailing" constant="8" id="5q9-zH-IQp"/>
                                     <constraint firstItem="XQv-42-Ofm" firstAttribute="top" secondItem="Ubo-TC-Bwu" secondAttribute="bottom" constant="8" id="8Db-nj-3eW"/>
                                     <constraint firstItem="ram-ZF-umw" firstAttribute="top" secondItem="XQv-42-Ofm" secondAttribute="bottom" constant="8" id="8tp-XW-R1M"/>
@@ -174,6 +183,7 @@
                                     <constraint firstAttribute="bottom" secondItem="5uJ-fB-4Db" secondAttribute="bottom" constant="8" id="aeQ-LK-n39"/>
                                     <constraint firstItem="Ubo-TC-Bwu" firstAttribute="top" secondItem="kBx-Ij-fdN" secondAttribute="top" constant="8" id="bIf-No-5L6"/>
                                     <constraint firstAttribute="trailing" secondItem="1YA-gc-Oac" secondAttribute="trailing" constant="8" id="d5T-RW-11J"/>
+                                    <constraint firstItem="Hwl-Ao-o6a" firstAttribute="centerX" secondItem="1YA-gc-Oac" secondAttribute="centerX" id="ire-5r-FSc"/>
                                     <constraint firstItem="cac-qN-3PF" firstAttribute="top" secondItem="kBx-Ij-fdN" secondAttribute="top" constant="8" id="j2Q-v3-diz"/>
                                     <constraint firstItem="1YA-gc-Oac" firstAttribute="leading" secondItem="ram-ZF-umw" secondAttribute="trailing" constant="8" id="owT-Kw-aCJ"/>
                                     <constraint firstItem="1YA-gc-Oac" firstAttribute="top" secondItem="ncy-NG-jIB" secondAttribute="bottom" constant="8" id="qZl-5m-YaM"/>
@@ -225,6 +235,7 @@
                         <outlet property="button7" destination="5Hl-MB-tK3" id="kqt-Ga-dw9"/>
                         <outlet property="button8" destination="ram-ZF-umw" id="Vrq-pB-bhf"/>
                         <outlet property="button9" destination="1YA-gc-Oac" id="MNk-iq-y3R"/>
+                        <outlet property="delButton" destination="Hwl-Ao-o6a" id="GOd-Xw-qtg"/>
                         <outlet property="pin1" destination="xuV-Rm-nDq" id="0xj-bh-WYX"/>
                         <outlet property="pin2" destination="oR1-aE-uol" id="lRv-lB-AvA"/>
                         <outlet property="pin3" destination="6dL-Ib-HNf" id="K27-Gl-IVd"/>
@@ -238,6 +249,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="delete.right" catalog="system" width="128" height="104"/>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

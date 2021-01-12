@@ -30,6 +30,7 @@ class PinViewController: UIViewController, View {
     @IBOutlet weak var button8: UIButton!
     @IBOutlet weak var button9: UIButton!
     @IBOutlet weak var button0: UIButton!
+    @IBOutlet weak var delButton: UIButton!
     
     @IBOutlet weak var validateMsg: UILabel!
     
@@ -77,6 +78,10 @@ class PinViewController: UIViewController, View {
             .disposed(by: disposeBag)
         self.button0.rx.tap.debug("0️⃣")
             .map { PinReactor.Action.inputPinCode("0") }
+            .bind(to: reactor.action)
+            .disposed(by: disposeBag)
+        self.delButton.rx.tap.debug("⬅️")
+            .map { PinReactor.Action.delPinCodeSimbol }
             .bind(to: reactor.action)
             .disposed(by: disposeBag)
         
