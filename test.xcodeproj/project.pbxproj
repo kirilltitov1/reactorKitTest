@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF3330FE25AD9B9D0035F374 /* String_ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3330FD25AD9B9D0035F374 /* String_ext.swift */; };
 		EFAEAE762591F5F5009C2CAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAEAE752591F5F5009C2CAB /* AppDelegate.swift */; };
 		EFAEAE782591F5F5009C2CAB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAEAE772591F5F5009C2CAB /* SceneDelegate.swift */; };
 		EFAEAE7A2591F5F5009C2CAB /* PinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAEAE792591F5F5009C2CAB /* PinViewController.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EF3330FD25AD9B9D0035F374 /* String_ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String_ext.swift; sourceTree = "<group>"; };
 		EFAEAE722591F5F5009C2CAB /* test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFAEAE752591F5F5009C2CAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFAEAE772591F5F5009C2CAB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 				EFAEAE832591F5F6009C2CAB /* Info.plist */,
 				EFC193B525A79512001748BC /* AppCoordinator.swift */,
 				EFC193B925A79543001748BC /* BaseCoordinator.swift */,
+				EF3330FD25AD9B9D0035F374 /* String_ext.swift */,
 			);
 			path = test;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 			files = (
 				EFAEAE9F25925A91009C2CAB /* PinReactor.swift in Sources */,
 				EFC193BA25A79543001748BC /* BaseCoordinator.swift in Sources */,
+				EF3330FE25AD9B9D0035F374 /* String_ext.swift in Sources */,
 				EFAEAE7A2591F5F5009C2CAB /* PinViewController.swift in Sources */,
 				EFC193BD25A7956C001748BC /* PinCoordinator.swift in Sources */,
 				EFC193B625A79512001748BC /* AppCoordinator.swift in Sources */,

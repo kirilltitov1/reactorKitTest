@@ -38,7 +38,7 @@ class PinReactor: Reactor {
         switch action {
         case var .inputPinCode(simbol):
             let msg: String = {
-                // оч мало подумал над логикой, когда пароль был не правильынй, и потом вввели новые символы то он убирает сообщение  
+                // оч мало подумал над логикой, когда пароль был не правильынй, и потом вввели новые символы то он убирает сообщение
                 if (self.isPinCodeCorrect(pin: currentState.pinCode+simbol) ||
                     !self.isPinCodeFull(pin: currentState.pinCode+simbol)) ||
                     (self.isPinCodeCorrect(pin: currentState.pinCode)) {

@@ -79,6 +79,25 @@ class PinViewController: UIViewController, View {
             .map { PinReactor.Action.inputPinCode("0") }
             .bind(to: reactor.action)
             .disposed(by: disposeBag)
+        
+        self.reactor.state
+            .map { $0.pinCode[0] }
+            .bind(to: self.pin1.rx.text)
+            .disposed(by: disposeBag)
+        self.reactor.state
+            .map { $0.pinCode[1] }
+            .bind(to: self.pin2.rx.text)
+            .disposed(by: disposeBag)
+        self.reactor.state
+            .map { $0.pinCode[2] }
+            .bind(to: self.pin3.rx.text)
+            .disposed(by: disposeBag)
+        self.reactor.state
+            .map { $0.pinCode[3] }
+            .bind(to: self.pin4.rx.text)
+            .disposed(by: disposeBag)
+
+        
         self.reactor.state
             .map { $0.pinCodeValidate }
             .bind(to: self.validateMsg.rx.text)
